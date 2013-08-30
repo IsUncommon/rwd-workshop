@@ -1,0 +1,72 @@
+#page{
+  width: 73em;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+header{
+  display: block;
+  margin: 0 1.37%;
+}
+
+nav{
+  display: block;
+  overflow: hidden;
+}
+
+nav ul{
+  margin: 0; 
+  padding: 0;
+}
+
+nav li{
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  width: 15.068%;
+  margin-left: 1.37%;
+}
+
+nav a{
+  display: block;
+}
+
+.content{
+  display: block;
+  overflow: hidden;
+}
+
+.content p{
+  display: block;
+  float: left;
+  width: 31.507%;
+  margin-left: 1.37%;
+}
+
+@media screen and (max-width: 800px){
+  nav li{width: 31.507%;}
+  .content p{width: 47.945%;}
+}
+
+@media screen and (max-width: 600px){
+  nav li{width: 47.945%%;}
+  .content p{width: 97.25%;}
+}
+
+/*Style*/
+
+/*Style*/
+
+header{background: #ccc;}
+
+nav li{margin-bottom: 1em;}
+nav a{
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  background: #a00;
+  color: #fff;
+  text-decoration: none;
+}
