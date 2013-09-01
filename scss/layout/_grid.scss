@@ -1,0 +1,14 @@
+$total-columns: 12;
+$column-width: 5em;
+$gutter-width: 2em;
+$grid-padding: $gutter-width;
+
+@include border-box-sizing;
+
+nav{
+  display: none;
+}
+
+#page{
+  @include container;
+}

@@ -1,0 +1,82 @@
+h1{
+  font-size: 24px;
+  text-align: center;
+
+  @media screen and (min-width: 600px){ font-size: 32px;}
+  @media screen and (min-width: 720px){ font-size: 48px;}
+  @media screen and (min-width: 960px){ font-size: 60px;}
+}
+
+h2{
+  font-size: 21px;
+  text-align: center;
+
+  @media screen and (min-width: 600px){ font-size: 30px;}
+  @media screen and (min-width: 720px){ font-size: 36px;}
+  @media screen and (min-width: 960px){ font-size: 48px;}
+}
+
+section.story{
+  @media screen and (min-width: 720px){
+    @include span-columns(12);
+    @include suffix(3);
+  }
+
+  @media screen and (min-width: 960px){
+    @include span-columns(9 omega);
+  }
+}
+
+blockquote{
+  @media screen and (min-width: 720px){
+    @include span-columns(3 omega,9);
+    margin-right: -34.5%;
+    text-align: right;
+  }
+
+  @media screen and (min-width: 960px){
+    @include span-columns(3 omega, 6);
+    margin-right: -52.3%;
+  }  
+}
+
+footer{
+  @include span-columns(12);
+  border-top: solid 2px $secondary-color;
+  padding-top: 20px;
+
+  h3{margin: 0; padding: 0;}
+
+  @media screen and (min-width: 960px){
+    @include span-columns(3);
+    text-align: right;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  img{
+    width: 300px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 600px){
+      @include span-columns(4);
+    }
+
+    @media screen and (min-width: 960px){
+      @include span-columns(4,4);
+    }
+  }
+}
+
+img{max-width: 100%;}
+
+figure{
+  @include clearfix;
+  padding: 10px;
+  @media screen and (min-width: 720px){width: 134.5%;}
+  @media screen and (min-width: 960px){width: 152.3%;}
+
+  img{
+    @media screen and (min-width: 720px){ @include span-columns(8);}
+  }
+}
