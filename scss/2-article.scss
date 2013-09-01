@@ -1,7 +1,7 @@
-@import "assets/susy";
-@import "assets/normalize";
-@import "assets/colors";
+@import "base/susy";
+@import "base/normalize";
+@import "base/colors";
 
-@import "layout/_grid"
+@import "layout/_grid";
 
 @import "modules/_article";
