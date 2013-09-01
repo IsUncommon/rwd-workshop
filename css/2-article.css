@@ -404,6 +404,65 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/PTS55F_W.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/PTS56F_W.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/PTS75F_W.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/PTS76F_W.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Font Awesome';
+  src: url("../fonts/fontawesome-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 50, ../scss/base/_typography.scss */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+form,
+input,
+select,
+textarea {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* line 54, ../scss/base/_typography.scss */
+html {
+  font-size: 16px;
+}
+
 /* line 14, ../scss/base/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -431,6 +490,61 @@ nav {
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 1, ../scss/modules/_article_design.scss */
+html {
+  background: #ffe;
+}
+
+/* line 3, ../scss/modules/_article_design.scss */
+h1 {
+  color: #80bca3;
+  margin: 0;
+  padding: 2em 0 0 0;
+}
+
+/* line 9, ../scss/modules/_article_design.scss */
+h2 {
+  color: #655643;
+  margin: 0;
+  padding: 0 0 1em 0;
+  font-weight: normal;
+}
+
+/* line 16, ../scss/modules/_article_design.scss */
+blockquote {
+  font-style: italic;
+  font-size: 21px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #80bca3;
+  border-top: solid 3px;
+  border-bottom: solid 3px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* line 31, ../scss/modules/_article_design.scss */
+figure {
+  background: #655643;
+  color: #f6f7bd;
+}
+/* line 35, ../scss/modules/_article_design.scss */
+figure a {
+  color: #80bca3;
+}
+/* line 36, ../scss/modules/_article_design.scss */
+figure figcaption {
+  font-style: italic;
+}
+
+/* line 39, ../scss/modules/_article_design.scss */
+footer {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 20px;
 }
 
 /* line 1, ../scss/modules/_article.scss */

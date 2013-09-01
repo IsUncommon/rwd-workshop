@@ -1,7 +1,9 @@
 @import "base/susy";
 @import "base/normalize";
+@import "base/typography";
 @import "base/colors";
 
-@import "layout/_grid";
+@import "layout/grid";
 
-@import "modules/_article";
+@import "modules/article_design";
+@import "modules/article";
