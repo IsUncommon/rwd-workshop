@@ -1,0 +1,36 @@
+nav{
+  background: $primary-color;
+  // padding: 10px 0 20px 0;
+
+  ul, li{margin: 0; padding: 0; list-style: none; background: $primary-color}
+  li ul{margin-left: 20px; border-top: solid 1px $light-color;}
+
+  @media screen and (min-width: 720px){
+    li{margin: 0 10px;}
+    li ul, li li{margin-left: 0;}
+  }
+
+  a, span{
+    display: block;
+    color: $light-color;
+    text-decoration: none;
+    padding: 4px 10px; 
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 36px;
+
+    &:hover, &:focus{
+      background: $secondary-color;
+    }
+  }
+
+  span{font-weight: bold;}
+
+  span:before{
+    content: "\f0d7";
+    display: inline-block;
+    margin-right: 8px;
+    font-family: "Font Awesome";
+  }
+}

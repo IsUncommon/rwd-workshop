@@ -1,0 +1,57 @@
+nav{
+  display: block;
+
+  &:before{
+    content: "menu";
+    color: $light-color;
+    padding: 2px 8px;
+    display: block;
+    text-align: right;
+  }
+
+  &:hover:before{background: $secondary-color; cursor: pointer;}
+
+  >ul{height: 0; overflow: hidden;}
+
+  li ul{
+    height: 0; overflow: hidden;
+  }
+
+  &.active, li.active{
+    &:before{display: none;}
+    >ul{height: auto;}
+  }
+
+  @media screen and (min-width: 720px){
+    &:before{display: none;}
+    >ul{height: auto;}
+    
+    li{
+      display: block;
+      float: left;
+      width: auto;
+
+      >a, >span{border: none;}
+
+      ul{
+        position: absolute;
+        display: block;
+        width: 200px;
+        background: white;
+        margin: 0;
+
+        li{
+          display: block;
+          float: none;
+          width: 100%;
+        }
+
+      }
+
+      &.active ul, &:hover ul{
+          height: auto;
+      }
+    }
+
+  }
+}
