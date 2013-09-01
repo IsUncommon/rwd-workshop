@@ -11,4 +11,7 @@ jQuery(function(){
     event.stopPropagation();
   })
 
-})
+  $('a.menu').click(function(){
+    $('#page').toggleClass('active-navigation');
+  })
+});

@@ -12,3 +12,7 @@ nav{
 #page{
   @include container;
 }
+
+a.menu{
+  display: none;
+}

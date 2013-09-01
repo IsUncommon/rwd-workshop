@@ -492,9 +492,14 @@ nav {
   clear: both;
 }
 
+/* line 16, ../scss/layout/_grid.scss */
+a.menu {
+  display: none;
+}
+
 /* line 1, ../scss/modules/_article_design.scss */
 html {
-  background: #ffe;
+  background: #ffffee;
 }
 
 /* line 3, ../scss/modules/_article_design.scss */
@@ -847,5 +852,63 @@ nav.active > ul, nav li.active > ul {
   /* line 51, ../scss/modules/_nav.scss */
   nav li.active ul, nav li:hover ul {
     height: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  /* line 4, ../scss/modules/_nav_facebook.scss */
+  nav {
+    position: fixed;
+    z-index: 1;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  /* line 12, ../scss/modules/_nav_facebook.scss */
+  nav:before {
+    display: none;
+  }
+  /* line 14, ../scss/modules/_nav_facebook.scss */
+  nav > ul {
+    height: auto;
+    overflow: auto;
+  }
+
+  /* line 20, ../scss/modules/_nav_facebook.scss */
+  #page {
+    background: #ffffee;
+    position: relative;
+    z-index: 10;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  /* line 27, ../scss/modules/_nav_facebook.scss */
+  a.menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #80bca3;
+    color: #ffffee;
+    text-decoration: none;
+    padding: 4px 12px 4px 6px;
+    border-radius: 0 0 12px 0;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  /* line 40, ../scss/modules/_nav_facebook.scss */
+  #page.active-navigation {
+    left: 200px;
+  }
+  /* line 43, ../scss/modules/_nav_facebook.scss */
+  #page.active-navigation a.menu {
+    left: 200px;
   }
 }
