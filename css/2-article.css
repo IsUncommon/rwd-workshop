@@ -902,13 +902,29 @@ nav.active > ul, nav li.active > ul {
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
   }
-
+  /* line 39, ../scss/modules/_nav_facebook.scss */
+  a.menu.hide {
+    z-index: 110;
+  }
   /* line 40, ../scss/modules/_nav_facebook.scss */
-  #page.active-navigation {
+  a.menu.show {
+    z-index: 120;
+  }
+
+  /* line 49, ../scss/modules/_nav_facebook.scss */
+  #menu:target + #page {
     left: 200px;
   }
-  /* line 43, ../scss/modules/_nav_facebook.scss */
-  #page.active-navigation a.menu {
+  /* line 52, ../scss/modules/_nav_facebook.scss */
+  #menu:target + #page a.menu {
     left: 200px;
+  }
+  /* line 55, ../scss/modules/_nav_facebook.scss */
+  #menu:target + #page a.menu.hide {
+    z-index: 120;
+  }
+  /* line 56, ../scss/modules/_nav_facebook.scss */
+  #menu:target + #page a.menu.show {
+    z-index: 110;
   }
 }

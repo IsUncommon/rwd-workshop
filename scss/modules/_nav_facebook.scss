@@ -35,11 +35,19 @@
     padding: 4px 12px 4px 6px;
     border-radius: 0 0 12px 0;
     @include transition-duration(0.5s);
+
+    &.hide{z-index: 110;}
+    &.show{z-index: 120;}
   }
 
-  #page.active-navigation{
+  #menu:target + #page{
     left: 200px;
 
-    a.menu{left: 200px;}
+    a.menu{
+      left: 200px;
+
+      &.hide{z-index: 120;}
+      &.show{z-index: 110;}
+    }
   }
 }
