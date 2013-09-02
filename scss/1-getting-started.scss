@@ -1,7 +1,7 @@
-@import "assets/_susy";
-@import "assets/_normalize";
-@import "assets/_typography";
-@import "assets/_colors";
+@import "base/susy";
+@import "base/normalize";
+@import "base/typography";
+@import "base/colors";
 
 $total-columns: 12;
 $column-width: 5em;
@@ -12,7 +12,7 @@ $grid-padding: $gutter-width;
 
 #page{
  @include container;
- // @include susy-grid-background;
+ @include susy-grid-background;
 }
 header{ display: block;}
 nav{ display: block;}

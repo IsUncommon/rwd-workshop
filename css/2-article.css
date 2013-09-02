@@ -911,20 +911,97 @@ nav.active > ul, nav li.active > ul {
     z-index: 120;
   }
 
-  /* line 49, ../scss/modules/_nav_facebook.scss */
+  /* line 43, ../scss/modules/_nav_facebook.scss */
   #menu:target + #page {
     left: 200px;
   }
-  /* line 52, ../scss/modules/_nav_facebook.scss */
+  /* line 46, ../scss/modules/_nav_facebook.scss */
   #menu:target + #page a.menu {
     left: 200px;
   }
-  /* line 55, ../scss/modules/_nav_facebook.scss */
+  /* line 49, ../scss/modules/_nav_facebook.scss */
   #menu:target + #page a.menu.hide {
     z-index: 120;
   }
-  /* line 56, ../scss/modules/_nav_facebook.scss */
+  /* line 50, ../scss/modules/_nav_facebook.scss */
   #menu:target + #page a.menu.show {
     z-index: 110;
   }
+}
+/* line 7, ../scss/modules/_slideshow.scss */
+.slideshow {
+  display: block;
+  width: 100%;
+  padding-top: 66%;
+  overflow: hidden;
+  margin: 60px auto;
+  position: relative;
+}
+/* line 15, ../scss/modules/_slideshow.scss */
+.slideshow ul, .slideshow li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline;
+}
+/* line 22, ../scss/modules/_slideshow.scss */
+.slideshow img, .slideshow span, .slideshow strong {
+  display: block;
+}
+/* line 24, ../scss/modules/_slideshow.scss */
+.slideshow img, .slideshow span {
+  position: absolute;
+  left: 101%;
+}
+/* line 25, ../scss/modules/_slideshow.scss */
+.slideshow img {
+  width: 100%;
+  top: 0;
+}
+/* line 26, ../scss/modules/_slideshow.scss */
+.slideshow span {
+  width: 100%;
+  top: 0;
+}
+/* line 29, ../scss/modules/_slideshow.scss */
+.slideshow li.previous img, .slideshow li.previous span {
+  left: -101%;
+}
+/* line 33, ../scss/modules/_slideshow.scss */
+.slideshow li.current img, .slideshow li.current span {
+  left: 0;
+}
+/* line 39, ../scss/modules/_slideshow.scss */
+.slideshow li.current img, .slideshow li.current span, .slideshow li.previous img, .slideshow li.previous span {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 43, ../scss/modules/_slideshow.scss */
+.slideshow li.current span, .slideshow li.previous span {
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  transition-duration: 1.5s;
+}
+
+/* line 50, ../scss/modules/_slideshow.scss */
+.slideshow {
+  -webkit-box-shadow: 0 0 0 1px #655643, 0 0 0 4px #f6f7bd, 0 0 0 12px #655643;
+  -moz-box-shadow: 0 0 0 1px #655643, 0 0 0 4px #f6f7bd, 0 0 0 12px #655643;
+  box-shadow: 0 0 0 1px #655643, 0 0 0 4px #f6f7bd, 0 0 0 12px #655643;
+}
+
+/* line 56, ../scss/modules/_slideshow.scss */
+span {
+  text-align: left;
+  color: #f6f7bd;
+  padding: 8px;
+  font-size: 30px;
+  text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 2px;
 }
