@@ -4,6 +4,10 @@
 @import "base/colors";
 
 @import "layout/grid";
+
+nav{display: none;}
+.slideshow{display: none;}
+
 @import "modules/article_design";
 // @import "modules/nav_design";
 
