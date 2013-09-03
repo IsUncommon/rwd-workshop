@@ -1,0 +1,30 @@
+ul{
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  padding: 130px 0 80px 0;
+  color: $primary-color;
+}
+
+.backgrounds li{
+  background: transparent url("../images/backgrounds/Day_HotSunny.png") no-repeat top center;
+
+  &.partly-cloudy{background-image: url("../images/backgrounds/Day_PartlyCloudy.png");}
+  &.rain{background-image: url("../images/backgrounds/HeavyRain.png");}
+  &.night{background-image: url("../images/backgrounds/Night_ClearFair.png");}
+
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2){
+    background-size: 128px 128px;
+    &.sunny{background-image: url("../images/backgrounds-2x/Day_HotSunny.png");}
+    &.partly-cloudy{background-image: url("../images/backgrounds-2x/Day_PartlyCloudy.png");}
+    &.rain{background-image: url("../images/backgrounds-2x/HeavyRain.png");}
+    &.night{background-image: url("../images/backgrounds-2x/Night_ClearFair.png");}
+  }
+}
+
