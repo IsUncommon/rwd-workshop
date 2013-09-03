@@ -1,0 +1,43 @@
+html{background: $background-color;}
+
+h1{
+  color: $secondary-color;
+  margin: 0;
+  padding: 2em 0 0 0;
+}
+
+h2{
+  color: $primary-color;
+  margin: 0; 
+  padding: 0 0 1em 0;
+  font-weight: normal;
+}
+
+blockquote{
+  // font-weight: bold;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: lowercase;
+
+  color: $secondary-color;
+  border-top: solid 3px;
+  border-bottom: solid 3px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+figure{
+  background: $primary-color;
+  color: $light-color;
+
+  a{color: $secondary-color;}
+  figcaption{font-style: italic;}
+}
+
+footer{
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 20px;
+}
