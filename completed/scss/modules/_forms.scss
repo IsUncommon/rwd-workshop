@@ -1,0 +1,150 @@
+form{
+  margin: 16px auto;
+  padding: 0;
+  max-width: 480px;
+}
+
+fieldset{
+  padding: 12px 0;
+  border: none;
+  border-top: solid 4px $secondary-color;
+  
+  legend{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primary-color;
+    padding: 6px;
+  }
+
+  div{
+    padding-bottom: 8px;
+    position: relative;
+  }
+
+  label{
+    display: block;
+    color: $primary-color;
+  }  
+
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  select,
+  textarea{
+    @include box-sizing(border-box);
+
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;
+    padding: 0.5em;
+    border: solid 1px $primary-color;
+  }
+
+  .checkbox, .radio{
+    label{display: inline;}
+    input[type="checkbox"],
+    input[type="radio"]{
+      display: inline;
+    }
+  }
+
+  .radio{
+    label{margin-right: 2%;}
+    label:first-child{
+      display: block;
+      margin: 0;
+    }
+  } 
+  
+  .hint, .error{
+    color: $primary-color;
+    font-style: italic;
+  }
+
+  .error{color: $danger-color;}
+
+  div.error{
+    label{
+      color: $danger-color;
+      font-weight: bold;
+    }
+    input{
+      color: $danger-color;
+      border-color: $danger-color;
+    }
+  }
+
+  button, input[type='submit']{
+    line-height: 30px;
+    border-radius: 4px;
+    @include background(linear-gradient(#fff, #aaa));
+  }
+}
+
+@media screen and (min-width: 720px){
+  form{
+    max-width: 100%;
+
+    div{clear: both;}
+
+    label{
+      display: inline-block;
+      width: 22.5%;
+      margin-right: 2%;
+      text-align: right;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    select,
+    textarea{
+      display: inline-block;
+      width: 50%;
+    }
+
+    .checkbox{
+      padding-left: 25%;
+    }
+
+    .radio label:first-child{
+      display: inline-block;
+      margin-right: 2%;
+    }
+
+
+    span.hint, span.error{
+      position: absolute;
+      width: 22%;
+      top: 4px;
+      right: 0;
+      border: solid 1px $secondary-color;
+      padding: 4px 6px;
+      border-radius: 2px;
+
+      &:before, &:after{
+        content: "";
+        position: absolute;
+        left: -12px;
+        top: 5px;
+        width: 0;
+        height: 0;
+
+        border: solid 6px transparent;
+        border-right-color: $secondary-color;
+      }
+
+      &:after{
+        left: -11px;
+        border-right-color: white;
+      }
+    }
+
+    span.error{
+      border-color: $danger-color;
+      &:before{border-right-color: $danger-color;}
+    }
+  }
+}
