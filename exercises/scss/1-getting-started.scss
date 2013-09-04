@@ -3,3 +3,77 @@
 @import "base/typography";
 @import "base/colors";
 
+$total-columns: 12;
+$column-width: 5em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+
+@include border-box-sizing;
+
+#page{
+ @include container;
+ @include susy-grid-background;
+}
+header{ display: block;}
+nav{ display: block;}
+.content{display: block;}
+
+nav ul{
+  margin: 0; 
+  padding: 0;
+}
+
+nav li{
+  margin: 0; padding: 0;
+  list-style-type: none;
+
+  @include span-columns(6);
+  @include nth-omega(2n);
+
+  @media screen and (min-width: 600px){
+    @include span-columns(4);
+    @include remove-nth-omega(2n);
+    @include nth-omega(3n);
+  }
+
+  @media screen and (min-width: 800px){
+    @include span-columns(2);
+    @include remove-nth-omega(3n);
+    @include nth-omega(6n);
+  }
+}
+
+.content p{
+  @include span-columns(12);
+  padding: 1em;
+  z-index: 10;
+
+  @media screen and (min-width: 600px){
+    @include span-columns(6);
+    @include nth-omega(2n);
+  }
+
+  @media screen and (min-width: 800px){
+    @include span-columns(4);
+    @include remove-nth-omega(2n);
+    @include nth-omega(3n);
+  }
+
+  background: $primary-color; color: $light-color;
+  +p{background: $light-color; color: $primary-color;}
+  +p+p{background: $primary-color; color: $light-color;}
+}
+
+/*Style*/
+
+header{background: transparent; color: $primary-color; margin-bottom: 10px;}
+h1, h2{margin: 0; padding: 0;}
+nav li{margin-bottom: 1em;}
+nav a{
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  background: $secondary-color;
+  color: $light-color;
+  text-decoration: none;
+}

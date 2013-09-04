@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/3-forms.css">
+  </head>
+  <body>
+    <div id="page">
+      <form action=".">
+        <fieldset>
+          <legend>Register</legend>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+          </div>
+          <div class="error">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <span class="error">an account with this email already exists</span>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div>
+            <label for="age">Age</label>
+            <input type="date" name="age" id="age">
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone">
+            <span class="hint">include area code</span>
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="" cols="30" rows="10" id="address"></textarea>
+          </div>
+          <div>
+            <label for="city">City</label>
+            <select name="city" id="city">
+              <option value="Bangalore">Bangalore</option>
+              <option value="Secunderabad">Secunderabad</option>
+              <option value="Delhi">Delhi</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="checkbox">
+            <input type="checkbox" name="mailing-list" id="mailing-list">
+            <label for="mailing-list">I would like to receive special offers</label>
+          </div>
+          <div class="radio">
+            <label for="email-format">Preferred Email format</label>
+
+            <input type="radio" name="email-format" value="html-email" id="html-email">
+            <label for="html-email">HTML formatted</label>
+
+            <input type="radio" name="email-format" value="plain-text-email" id="plain-text-email">
+            <label for="plain-text-email">Plain Text</label>
+          </div>
+        </fieldset>
+        <p class="actions">
+          <input type="submit">
+          <button>Submit</button>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- 
+Todo:
+* Calendar Widget
+* Number Validation
+ -->
