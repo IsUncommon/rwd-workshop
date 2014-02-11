@@ -1,0 +1,35 @@
+nav, a.menu, figure, .slideshow { display: none; }
+
+#page {
+  margin: 0 5%;
+}
+
+@media screen and (min-width: 720px) {
+  h1 { font-size: 40px; }
+
+  .story p {
+    width: 70%;
+    float: left;
+  }
+
+  .story blockquote {
+    width: 25%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  h1 { font-size: 60px; }
+
+  .story {
+    width: 70%;
+    float: right;
+  }
+
+  footer {
+    width: 25%;
+    float: left;
+  }
+}
+
+img { max-width: 100%; }

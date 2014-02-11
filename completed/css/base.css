@@ -463,202 +463,110 @@ html {
   font-size: 16px;
 }
 
-/* line 14, ../scss/base/susy/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* line 1, ../scss/modules/_article_design.scss */
+html {
+  background: #ffffee;
 }
 
-/* line 8, ../scss/layout/_grid.scss */
-nav {
-  display: none;
+/* line 3, ../scss/modules/_article_design.scss */
+h1 {
+  color: #80bca3;
+  margin: 0;
+  padding: 2em 0 0 0;
 }
 
-/* line 12, ../scss/layout/_grid.scss */
-#page {
-  *zoom: 1;
-  max-width: 86em;
-  _width: 86em;
-  padding-left: 2em;
-  padding-right: 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 38, ../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#page:after {
-  content: "";
-  display: table;
-  clear: both;
+/* line 9, ../scss/modules/_article_design.scss */
+h2 {
+  color: #655643;
+  margin: 0;
+  padding: 0 0 1em 0;
+  font-weight: normal;
 }
 
-/* line 16, ../scss/layout/_grid.scss */
-a.menu {
-  display: none;
-}
-
-/* line 1, ../scss/modules/_forms.scss */
-form {
-  margin: 16px auto;
-  padding: 0;
-  max-width: 480px;
-}
-
-/* line 7, ../scss/modules/_forms.scss */
-fieldset {
-  padding: 12px 0;
-  border: none;
-  border-top: solid 4px #80bca3;
-}
-/* line 12, ../scss/modules/_forms.scss */
-fieldset legend {
+/* line 16, ../scss/modules/_article_design.scss */
+blockquote {
+  font-style: italic;
+  font-size: 21px;
+  line-height: 32px;
   text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #655643;
-  padding: 6px;
-}
-/* line 20, ../scss/modules/_forms.scss */
-fieldset div {
-  padding-bottom: 8px;
-  position: relative;
-}
-/* line 25, ../scss/modules/_forms.scss */
-fieldset label {
-  display: block;
-  color: #655643;
-}
-/* line 34, ../scss/modules/_forms.scss */
-fieldset input[type=text],
-fieldset input[type=email],
-fieldset input[type=password],
-fieldset select,
-fieldset textarea {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  font-size: 14px;
-  line-height: 21px;
-  width: 100%;
-  padding: 0.5em;
-  border: solid 1px #655643;
-}
-/* line 46, ../scss/modules/_forms.scss */
-fieldset .checkbox label, fieldset .radio label {
-  display: inline;
-}
-/* line 48, ../scss/modules/_forms.scss */
-fieldset .checkbox input[type="checkbox"],
-fieldset .checkbox input[type="radio"], fieldset .radio input[type="checkbox"],
-fieldset .radio input[type="radio"] {
-  display: inline;
-}
-/* line 54, ../scss/modules/_forms.scss */
-fieldset .radio label {
-  margin-right: 2%;
-}
-/* line 55, ../scss/modules/_forms.scss */
-fieldset .radio label:first-child {
-  display: block;
+  text-transform: lowercase;
+  color: #80bca3;
+  border-top: solid 3px;
+  border-bottom: solid 3px;
+  padding: 20px 0;
   margin: 0;
 }
-/* line 61, ../scss/modules/_forms.scss */
-fieldset .hint, fieldset .error {
-  color: #655643;
+
+/* line 31, ../scss/modules/_article_design.scss */
+figure {
+  background: #655643;
+  color: #f6f7bd;
+}
+/* line 35, ../scss/modules/_article_design.scss */
+figure a {
+  color: #80bca3;
+}
+/* line 36, ../scss/modules/_article_design.scss */
+figure figcaption {
   font-style: italic;
 }
-/* line 66, ../scss/modules/_forms.scss */
-fieldset .error {
-  color: #cc0000;
-}
-/* line 69, ../scss/modules/_forms.scss */
-fieldset div.error label {
-  color: #cc0000;
-  font-weight: bold;
-}
-/* line 73, ../scss/modules/_forms.scss */
-fieldset div.error input {
-  color: #cc0000;
-  border-color: #cc0000;
-}
-/* line 79, ../scss/modules/_forms.scss */
-fieldset button, fieldset input[type='submit'] {
-  line-height: 30px;
-  border-radius: 4px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #aaaaaa));
-  background: -webkit-linear-gradient(#ffffff, #aaaaaa);
-  background: -moz-linear-gradient(#ffffff, #aaaaaa);
-  background: -o-linear-gradient(#ffffff, #aaaaaa);
-  background: linear-gradient(#ffffff, #aaaaaa);
+
+/* line 39, ../scss/modules/_article_design.scss */
+footer {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 20px;
 }
 
+/* line 1, ../scss/modules/_nav_design.scss */
+nav {
+  background: #655643;
+}
+/* line 5, ../scss/modules/_nav_design.scss */
+nav ul, nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #655643;
+}
+/* line 6, ../scss/modules/_nav_design.scss */
+nav li ul {
+  margin-left: 20px;
+  border-top: solid 1px #f6f7bd;
+}
 @media screen and (min-width: 720px) {
-  /* line 87, ../scss/modules/_forms.scss */
-  form {
-    max-width: 100%;
+  /* line 9, ../scss/modules/_nav_design.scss */
+  nav li {
+    margin: 0 10px;
   }
-  /* line 90, ../scss/modules/_forms.scss */
-  form div {
-    clear: both;
+  /* line 10, ../scss/modules/_nav_design.scss */
+  nav li ul, nav li li {
+    margin-left: 0;
   }
-  /* line 92, ../scss/modules/_forms.scss */
-  form label {
-    display: inline-block;
-    width: 22.5%;
-    margin-right: 2%;
-    text-align: right;
-  }
-  /* line 103, ../scss/modules/_forms.scss */
-  form input[type=text],
-  form input[type=email],
-  form input[type=password],
-  form select,
-  form textarea {
-    display: inline-block;
-    width: 50%;
-  }
-  /* line 108, ../scss/modules/_forms.scss */
-  form .checkbox {
-    padding-left: 25%;
-  }
-  /* line 112, ../scss/modules/_forms.scss */
-  form .radio label:first-child {
-    display: inline-block;
-    margin-right: 2%;
-  }
-  /* line 118, ../scss/modules/_forms.scss */
-  form span.hint, form span.error {
-    position: absolute;
-    width: 22%;
-    top: 4px;
-    right: 0;
-    border: solid 1px #80bca3;
-    padding: 4px 6px;
-    border-radius: 2px;
-  }
-  /* line 127, ../scss/modules/_forms.scss */
-  form span.hint:before, form span.hint:after, form span.error:before, form span.error:after {
-    content: "";
-    position: absolute;
-    left: -12px;
-    top: 5px;
-    width: 0;
-    height: 0;
-    border: solid 6px transparent;
-    border-right-color: #80bca3;
-  }
-  /* line 139, ../scss/modules/_forms.scss */
-  form span.hint:after, form span.error:after {
-    left: -11px;
-    border-right-color: white;
-  }
-  /* line 145, ../scss/modules/_forms.scss */
-  form span.error {
-    border-color: #cc0000;
-  }
-  /* line 147, ../scss/modules/_forms.scss */
-  form span.error:before {
-    border-right-color: #cc0000;
-  }
+}
+/* line 13, ../scss/modules/_nav_design.scss */
+nav a, nav span {
+  display: block;
+  color: #f6f7bd;
+  text-decoration: none;
+  padding: 4px 10px;
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 36px;
+}
+/* line 23, ../scss/modules/_nav_design.scss */
+nav a:hover, nav a:focus, nav span:hover, nav span:focus {
+  background: #80bca3;
+}
+/* line 28, ../scss/modules/_nav_design.scss */
+nav span {
+  font-weight: bold;
+}
+/* line 30, ../scss/modules/_nav_design.scss */
+nav span:before {
+  content: "\f0d7";
+  display: inline-block;
+  margin-right: 8px;
+  font-family: "Font Awesome";
 }
