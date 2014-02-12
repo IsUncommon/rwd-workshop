@@ -518,6 +518,15 @@ footer {
   margin-top: 20px;
 }
 
+/* line 45, ../scss/modules/_article_design.scss */
+.slideshow span {
+  text-align: left;
+  color: #f6f7bd;
+  padding: 8px;
+  font-size: 30px;
+  text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 2px;
+}
+
 /* line 1, ../scss/modules/_nav_design.scss */
 nav {
   background: #655643;

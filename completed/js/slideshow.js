@@ -10,7 +10,7 @@ slideSwitch = function(){
   if ($next.length == 0) {
     $next = $('.slideshow li:first-child');
   };
-  
+
   $next.addClass('current');
   $current.removeClass('current').addClass('previous');
 
