@@ -1,3 +1,11 @@
+a.menu {
+    background: $secondary-color;
+    color: $background-color;
+    text-decoration: none;
+    padding: 4px 12px 4px 6px;
+    border-radius: 0 0 12px 0;
+}
+
 nav{
   background: $primary-color;
   // padding: 10px 0 20px 0;
@@ -14,7 +22,7 @@ nav{
     display: block;
     color: $light-color;
     text-decoration: none;
-    padding: 4px 10px; 
+    padding: 4px 10px;
     position: relative;
     cursor: pointer;
     font-size: 18px;

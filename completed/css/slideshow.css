@@ -1,0 +1,57 @@
+/* -------------- slideshow ------------------- */
+
+.slideshow {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0;
+
+  width: 100%;
+  padding: 0 0 66% 0;
+  background: black;
+}
+
+.slideshow li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+.slideshow img,
+.slideshow span {
+  display: block;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.slideshow span {
+  margin: 20px;
+  transition-duration: 1.5s;
+}
+
+.slideshow img,
+.slideshow span {
+  left: 101%;
+}
+
+.slideshow .current img,
+.slideshow .current span {
+  left: 0;
+}
+
+.slideshow .previous img,
+.slideshow .previous span {
+  left: -101%;
+}
+
+.slideshow img {z-index: 10;}
+.slideshow span {z-index: 15;}
+
+.slideshow .current img {z-index: 20;}
+.slideshow .current span {z-index: 25;}

@@ -503,13 +503,18 @@ html {
 }
 
 /* line 3, ../scss/modules/_article_design.scss */
+#page {
+  background: #ffffee;
+}
+
+/* line 5, ../scss/modules/_article_design.scss */
 h1 {
   color: #80bca3;
   margin: 0;
   padding: 2em 0 0 0;
 }
 
-/* line 9, ../scss/modules/_article_design.scss */
+/* line 11, ../scss/modules/_article_design.scss */
 h2 {
   color: #655643;
   margin: 0;
@@ -517,7 +522,7 @@ h2 {
   font-weight: normal;
 }
 
-/* line 16, ../scss/modules/_article_design.scss */
+/* line 18, ../scss/modules/_article_design.scss */
 blockquote {
   font-style: italic;
   font-size: 21px;
@@ -531,28 +536,28 @@ blockquote {
   margin: 0;
 }
 
-/* line 31, ../scss/modules/_article_design.scss */
+/* line 33, ../scss/modules/_article_design.scss */
 figure {
   background: #655643;
   color: #f6f7bd;
 }
-/* line 35, ../scss/modules/_article_design.scss */
+/* line 37, ../scss/modules/_article_design.scss */
 figure a {
   color: #80bca3;
 }
-/* line 36, ../scss/modules/_article_design.scss */
+/* line 38, ../scss/modules/_article_design.scss */
 figure figcaption {
   font-style: italic;
 }
 
-/* line 39, ../scss/modules/_article_design.scss */
+/* line 41, ../scss/modules/_article_design.scss */
 footer {
   font-size: 15px;
   font-style: italic;
   margin-top: 20px;
 }
 
-/* line 45, ../scss/modules/_article_design.scss */
+/* line 47, ../scss/modules/_article_design.scss */
 .slideshow span {
   text-align: left;
   color: #f6f7bd;
@@ -562,32 +567,41 @@ footer {
 }
 
 /* line 1, ../scss/modules/_nav_design.scss */
+a.menu {
+  background: #80bca3;
+  color: #ffffee;
+  text-decoration: none;
+  padding: 4px 12px 4px 6px;
+  border-radius: 0 0 12px 0;
+}
+
+/* line 9, ../scss/modules/_nav_design.scss */
 nav {
   background: #655643;
 }
-/* line 5, ../scss/modules/_nav_design.scss */
+/* line 13, ../scss/modules/_nav_design.scss */
 nav ul, nav li {
   margin: 0;
   padding: 0;
   list-style: none;
   background: #655643;
 }
-/* line 6, ../scss/modules/_nav_design.scss */
+/* line 14, ../scss/modules/_nav_design.scss */
 nav li ul {
   margin-left: 20px;
   border-top: solid 1px #f6f7bd;
 }
 @media screen and (min-width: 720px) {
-  /* line 9, ../scss/modules/_nav_design.scss */
+  /* line 17, ../scss/modules/_nav_design.scss */
   nav li {
     margin: 0 10px;
   }
-  /* line 10, ../scss/modules/_nav_design.scss */
+  /* line 18, ../scss/modules/_nav_design.scss */
   nav li ul, nav li li {
     margin-left: 0;
   }
 }
-/* line 13, ../scss/modules/_nav_design.scss */
+/* line 21, ../scss/modules/_nav_design.scss */
 nav a, nav span {
   display: block;
   color: #f6f7bd;
@@ -598,15 +612,15 @@ nav a, nav span {
   font-size: 18px;
   line-height: 36px;
 }
-/* line 23, ../scss/modules/_nav_design.scss */
+/* line 31, ../scss/modules/_nav_design.scss */
 nav a:hover, nav a:focus, nav span:hover, nav span:focus {
   background: #80bca3;
 }
-/* line 28, ../scss/modules/_nav_design.scss */
+/* line 36, ../scss/modules/_nav_design.scss */
 nav span {
   font-weight: bold;
 }
-/* line 30, ../scss/modules/_nav_design.scss */
+/* line 38, ../scss/modules/_nav_design.scss */
 nav span:before {
   content: "\f0d7";
   display: inline-block;
