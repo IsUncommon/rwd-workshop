@@ -1,0 +1,62 @@
+ul{
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  height: 40px;
+  padding: 130px 0 80px 0;
+  color: #655643;
+}
+
+.backgrounds li       { background: transparent url("../images/backgrounds/Day_HotSunny.png") no-repeat top center;}
+.backgrounds li.cloudy{ background-image: url("../images/backgrounds/Day_PartlyCloudy.png");}
+.backgrounds li.rain  { background-image: url("../images/backgrounds/HeavyRain.png");}
+.backgrounds li.night { background-image: url("../images/backgrounds/Night_ClearFair.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+  .backgrounds li       { background-size: 128px 128px; }
+  .backgrounds li.sunny { background-image: url("../images/backgrounds-2x/Day_HotSunny.png");}
+  .backgrounds li.cloudy{ background-image: url("../images/backgrounds-2x/Day_PartlyCloudy.png");}
+  .backgrounds li.rain  { background-image: url("../images/backgrounds-2x/HeavyRain.png");}
+  .backgrounds li.night { background-image: url("../images/backgrounds-2x/Night_ClearFair.png");}
+}
+
+.sprite li:before, .font li:before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 128px;
+  height: 128px;
+  top: 0;
+  left: 46px;
+}
+
+.sprite li:before {
+  background: transparent url("../images/icons.png") no-repeat 0 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2){
+  .sprite li:before {
+    background-image: url("../images/icons-2x.png");
+    background-size: 128px 542px;
+  }
+}
+
+.sprite li.cloudy:before{background-position: 0 -138px;}
+.sprite li.rain:before{background-position: 0 -284px;}
+.sprite li.night:before{background-position: 0 -414px;}
+
+.font li:before {
+  font-family: "Font Awesome";
+  font-size: 100px;
+}
+
+.font li.sunny:before { content: "\f044"; color: #acc;}
+.font li.cloudy:before{ content: "\f019"; }
+.font li.rain:before  { content: "\f021"; }
+.font li.night:before { content: "\f098"; }

@@ -478,9 +478,10 @@ h1 {
   color: #80bca3;
   margin: 0;
   padding: 2em 0 0 0;
+  text-align: center;
 }
 
-/* line 11, ../scss/modules/_article_design.scss */
+/* line 12, ../scss/modules/_article_design.scss */
 h2 {
   color: #655643;
   margin: 0;
@@ -488,7 +489,7 @@ h2 {
   font-weight: normal;
 }
 
-/* line 18, ../scss/modules/_article_design.scss */
+/* line 19, ../scss/modules/_article_design.scss */
 blockquote {
   font-style: italic;
   font-size: 21px;
@@ -502,28 +503,28 @@ blockquote {
   margin: 0;
 }
 
-/* line 33, ../scss/modules/_article_design.scss */
+/* line 34, ../scss/modules/_article_design.scss */
 figure {
   background: #655643;
   color: #f6f7bd;
 }
-/* line 37, ../scss/modules/_article_design.scss */
+/* line 38, ../scss/modules/_article_design.scss */
 figure a {
   color: #80bca3;
 }
-/* line 38, ../scss/modules/_article_design.scss */
+/* line 39, ../scss/modules/_article_design.scss */
 figure figcaption {
   font-style: italic;
 }
 
-/* line 41, ../scss/modules/_article_design.scss */
+/* line 42, ../scss/modules/_article_design.scss */
 footer {
   font-size: 15px;
   font-style: italic;
   margin-top: 20px;
 }
 
-/* line 47, ../scss/modules/_article_design.scss */
+/* line 48, ../scss/modules/_article_design.scss */
 .slideshow span {
   text-align: left;
   color: #f6f7bd;
